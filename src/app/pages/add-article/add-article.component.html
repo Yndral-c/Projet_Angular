@@ -1,0 +1,32 @@
+<div class="uk-container">
+  <h2>Formulaire Ajout d'un article</h2>
+
+  <hr>
+
+  <h4 class="uk-margin">Nouvel article</h4>
+
+  <div class="uk-margin">
+    <input class="uk-input" type="text" [(ngModel)] = "article.id" placeholder="Id de l'article">
+  </div>
+
+  <div class="uk-margin">
+    <input class="uk-input" type="text" [(ngModel)] = "article.title" placeholder="Nom de l'article">
+  </div>
+
+  <div class="uk-margin">
+    <input class="uk-input" type="text" [(ngModel)] = "article.desc" placeholder="Description de l'article">
+  </div>
+
+  <div class="uk-margin">
+    <input class="uk-input" type="text" [(ngModel)] = "article.author" placeholder="Auteur de l'article">
+  </div>
+
+
+  <div class="uk-margin">
+    <input class="uk-input" type="text" [(ngModel)] = "article.imgPath" placeholder="Image de l'article">
+  </div>
+
+  <button class="uk-button uk-button-primary uk-width-1-1"
+          (click)="sendNewArticle()">Envoyer les données
+  </button>
+</div>

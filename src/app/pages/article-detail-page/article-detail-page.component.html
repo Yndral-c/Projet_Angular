@@ -1,0 +1,12 @@
+<div>
+  <div>
+    <button (click)="deleteThisArticle(article.id)" class="uk-button">Supprimer l'article</button>
+  </div>
+
+  <h2>{{ article.title }}</h2>
+
+  <p>{{ article.desc }}</p>
+  <img src="{{article.imgPath}}" alt="">
+  <p>By {{article.author}}</p>
+
+</div>
