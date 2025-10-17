@@ -19,4 +19,8 @@ export class AppComponent {
   goToLogin(){
     window.open('/login-page', '_self');
   }
+
+  goToSignup(){
+    window.open('/signup-page', '_self');
+  }
 }

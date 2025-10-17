@@ -4,6 +4,7 @@ import {ArticleDetailPageComponent} from './pages/article-detail-page/article-de
 import {AddArticleComponent} from './pages/add-article/add-article.component';
 import {ModifyArticleComponent} from './pages/modify-article/modify-article.component';
 import {LoginPageComponent} from './pages/login-page/login-page.component';
+import {SignupPageComponent} from './pages/signup-page/signup-page.component';
 
 export const routes: Routes = [
   {path: 'liste-articles', component: ListeArticlesComponent},
@@ -11,4 +12,5 @@ export const routes: Routes = [
   {path : 'add-article', component: AddArticleComponent},
   {path: 'modify-article', component: ModifyArticleComponent},
   {path: 'login-page', component: LoginPageComponent},
+  {path: 'signup-page', component: SignupPageComponent},
 ];

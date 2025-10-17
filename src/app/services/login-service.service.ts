@@ -16,4 +16,8 @@ export class LoginServiceService {
     }
     return this.http.post<any>(`http://localhost:3000/login`, infos)
   }
+
+  signup(user: any){
+    return this.http.post<any>(`http://localhost:3000/signup`, user)
+  }
 }
