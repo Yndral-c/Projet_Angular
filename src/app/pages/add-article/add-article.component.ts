@@ -15,7 +15,7 @@ import {HttpClientModule} from '@angular/common/http';
 })
 export class AddArticleComponent {
   public article = {
-    id: "",
+    id: null,
     title: "",
     desc: "",
     author: "",
@@ -30,7 +30,7 @@ export class AddArticleComponent {
     this.articleService.addArticle(this.article).subscribe({
       next: data => {
         if (data.code == "200") {
-          data.data.push(this.article);
+          this.router.navigate([`/liste-articles/${data.data.id}`]);;
         }
       }
     });

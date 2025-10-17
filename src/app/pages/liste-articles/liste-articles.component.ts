@@ -26,11 +26,16 @@ export class ListeArticlesComponent {
       }
     });
   }
-  openArticle(id: number){
+
+  openArticle(id: number) {
     this.router.navigate(['/liste-articles', id]);
   }
 
   openAddArticle() {
     this.router.navigate(['/add-article']);
+  }
+
+  openModifyArticle() {
+    window.open('http://localhost:4200/modify-article', '_self');
   }
 }

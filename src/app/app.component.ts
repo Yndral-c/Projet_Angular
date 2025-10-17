@@ -15,4 +15,8 @@ export class AppComponent {
   goToList(){
     this.router.navigate(['/liste-articles']);
   }
+
+  goToLogin(){
+    window.open('/login-page', '_self');
+  }
 }

@@ -1,6 +1,24 @@
-<header>
-  <h4>Header du site</h4>
-  <button (click)="goToList()" class="uk-button-primary uk-align-center">Liste des articles</button>
+<header class="uk-background-secondary uk-box-shadow-small">
+  <div class="uk-container uk-container-expand">
+    <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+      <div class="uk-navbar-left">
+        <h2 (click)="goToList()" class="uk-navbar-item uk-text-bold uk-text-large uk-light uk-margin-remove">Gestion des articles</h2>
+      </div>
+
+      <div class="uk-navbar-right">
+        <button
+          (click)="goToLogin()"
+          class="uk-button uk-button-default uk-light uk-text-bold uk-margin-small-top uk-margin-small-bottom">
+          LOGIN
+        </button>
+        <button class="uk-button uk-button-default uk-light uk-text-bold uk-margin-small-top uk-margin-small-bottom">
+          SIGNUP
+        </button>
+      </div>
+
+    </nav>
+  </div>
 </header>
 
 <div class="uk-container uk-height-viewport">

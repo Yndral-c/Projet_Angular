@@ -3,6 +3,7 @@ import {ActivatedRoute} from '@angular/router';
 import {ArticleServiceService} from '../../services/article-service.service';
 import {HttpClientModule} from '@angular/common/http';
 import {AppComponent} from '../../app.component';
+import {ModifyArticleComponent} from '../modify-article/modify-article.component';
 
 @Component({
   selector: 'app-article-detail-page',
@@ -37,5 +38,8 @@ export class ArticleDetailPageComponent {
       this.articleService.deleteArticle(id).subscribe({});
       this.appComponent.goToList()
     }
+  }
+  openModifyArticle() {
+    window.open("http://localhost:4200/modify-article/", "_self");
   }
 }

@@ -1,12 +1,13 @@
 <h1>Liste des articles</h1>
 
 <div class="uk-container uk-height-viewport">
-  <button (click)="onClickCallApi()" class="uk-button uk-button-primary uk-width-1-1">Afficher les articles</button>
+  <button (click)="onClickCallApi()" class="uk-button uk-margin uk-button-primary uk-width-1-1">Afficher les articles</button>
 
-  <button (click)="openAddArticle()" class="uk-button-primary uk-width-1-1">Ajouter ou supprimer un article</button>
+  <button (click)="openAddArticle()" class="uk-button uk-margin uk-button-primary uk-width-1-1">Ajouter un article</button>
+  <button (click)="openModifyArticle()" class="uk-button uk-margin uk-button-primary uk-width-1-1">Modifier un article</button>
 
   @for (article of articles; track article) {
-    <div (click)="openArticle(article.id)" class="uk-card uk-card-secondary uk-card-hover uk-card-body sdv-movie-card">
+    <div (click)="openArticle(article.id)" class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-margin sdv-movie-card">
       <h3 class="uk-card-title">Article {{article.id}}</h3>
       <div class="uk-card uk-card-secondary">
         {{article.title}}
